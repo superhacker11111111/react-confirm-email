@@ -1,0 +1,15 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is Backend APIs for RealityFence",
+    "version": "1.0.0",
+    "title": "RealityFence",
+    "contact": {
+      "email": "web.develop1228@gmail.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  }
+}
