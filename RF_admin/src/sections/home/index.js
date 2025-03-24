@@ -1,0 +1,10 @@
+export { default as HomeHero } from './HomeHero';
+export { default as HowWorks } from './HowWorks';
+export { default as HomeBenefit } from './HomeBenefit';
+export { default as HomeDownload } from './HomeDownload';
+export { default as Competitve } from './Competitve';
+export { default as HomeColorPresets } from './HomeColorPresets';
+// export { default as HomePricingPlans } from './HomePricingPlans';
+// export { default as HomeAdvertisement } from './HomeAdvertisement';
+export { default as HomeCleanInterfaces } from './HomeCleanInterfaces';
+export { default as Shopping } from './Shopping';
