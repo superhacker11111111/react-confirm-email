@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --status-bar-height: constant(safe-area-inset-top);
+  --status-bar-height: env(safe-area-inset-top);
+}
+
+html,
+body {
+  padding-top: var(--status-bar-height);
+}
+/* 
+.MuiPaper-root {
+  background-color: transparent !important;
+} */
+
+.MuiButtonBase-root.Mui-disabled {
+  opacity: 0.6;
+  background-color: '#1FA9FF';
+  color: white;
+}
+
+.MuiLoadingButton-loadingIndicator {
+  color: white;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.input-search {
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+  padding-right: 40px;
+  color: #000;
+}
+.input-search::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search {
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  color: #000;
+  background-color: transparent;
+  pointer-events: painted;
+}
+.btn-search:focus ~ .input-search {
+  width: 150px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+.input-search:focus {
+  width: 150px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+.blog-fences {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  /* Specify the maximum height */
+  max-height: 3em;
+  /* Set the line height */
+  line-height: 1em;
+  /* Calculate line height multiplied by the number of lines */
+  -webkit-line-clamp: 3;
+  /* Additional styles */
+  font-size: 16px;
+  width: 100%;
+  text-overflow: ellipsis;
+}
+
+@font-face {
+  font-family: 'Digital-7 Regular';
+  src: url('assets/digital-7/digital-7.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
